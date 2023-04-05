@@ -1,3 +1,83 @@
+Nama                    : LAKSONO PRASETYO
+Perguruan Tinggi        : UNIVERSITAS BRAWIJAYA
+Stack yang Digunakan    : PHP, PHPMYADMIN, BOOSTRAP
+Cara menjalankan        :
+
+A. Pendahuluan
+    1. Buka lakukan clone repositori ini.
+    2. Buka XAMPP Control Panel
+    3. Jalankan Apache dan Mysql.
+    4. Buka web browser dan masukkan link "localhost/phpmyadmin".
+    5. Buat database baru pada PHPMYADMIN.
+    6. Buka file repositori ini pada text editor yang Anda gunakan pada device Anda.
+    7. Atur file nama, user, serta password PHPMYADMIN anda pada file .env.
+    8. Buka terminal pada project ini dan jalankan perintah "php artisan serve".
+    6. Buka web browser dan masukkan link "localhost:8000".
+
+B. Akses Tanpa Login
+    1. Buka web browser dan masukkan link "localhost:8000".
+    2. Tekan item - item yang tersedia pada navbar ex: "kontak kami", "login".
+    
+C. Login dan Register
+    1. Tekan item login pada navbar.
+    2. Bila Anda belum punya akun silahkan tekan tulisan "daftar di sini"
+       2.1 Masukkan data diri pribadi Anda pada halaman register dan tekan tombol "register".
+       2.2 Jika proses register berhasil maka Anda akan kembali ke halaman utama dalam posisi login.
+    3. Bila Anda sudah memiliki akun silahkan masukkan email dan password yang telah Anda daftarkan sebelumnya dan tekan tombol "login".
+    4. Bila Anda berhasil login maupun regiser, Anda akan dialihkan ke halaman utama dengan tombol login pada navbar berubah menjadi tombol dropdown dengan ikon orang.
+D. Edit profli.
+    1. Tean tombol drop down dengan ikon orang pada navbar, lalu tekan baris yang bertuliskan nama Anda (username yang telah didaftarkan).
+    2. Anda akan dialuhkan ke halaman 'dit profile' yang menampilkan data diri pribadi Anda
+    4. Lakukan perubahan data (meliputi : nama, email, foto) pada halaman tersebut lalu tekan tombol "ubah data".
+    5. Anda dapat menghapus foto profile Anda dengan cara tekan tombol hapus.
+       5.1 Tombol "hapus" akan muncul bila foto profil Anda terisi.
+       5.2 Jika foto profil Anda kosong, maka akan digantikan dengan ikon orang.
+E. CRUD kategori
+    1 READ
+        1.1 Tekan tombol drop down dengan ikon orang pada navbar, lalu tekan baris yang bertuliskan "data".
+        2.1 Tekan tombol "kategori" yang berada di sebelah kanan tombol "produk".
+    2. CREATE
+        2.1 Tekan tombol "tambah"
+        2.2 Masukkan nama kategori yang Anda inginkan lalu tekan tombol "tambahkan"
+    3. UPDATE
+        3.1 Tekan tombol "ubah" pada baris data yang ingin Anda ubah nama kategorinya.
+        3.2 Masukkan nama kategori yang Anda inginkan lalu tekan tombol "ubah".
+    4. DELETE
+        4.1 Tekan tombol "hapus" pada baris data yang ingin Anda hapus kategorinya.
+F. CRUD Produk
+    1 READ
+        1.1 Tekan tombol drop down dengan ikon orang pada navbar, lalu tekan baris yang bertuliskan "data".
+        2.1 Tekan tombol "produk" yang berada di sebelah kiri tombol "kategori".
+    2. CREATE
+        2.1 Tekan tombol "tambah"
+        2.2 Masukkan data produk pada form yang Anda inginkan lalu tekan tombol "tambahkan"
+    3. UPDATE
+        3.1 Tekan tombol "ubah" pada baris data yang ingin Anda ubah data produknya.
+        3.2 Masukkan perubahan data produk yang Anda inginkan lalu tekan tombol "ubah".
+    4. DELETE
+        4.1 Tekan tombol "hapus" pada baris data yang ingin Anda hapus produknya.
+G. Logout
+    1. Tekan tombol drop down dengan ikon orang pada navbar, lalu tekan baris yang bertuliskan "logout".
+
+Catatan :
+1. User yang tidak melakukan login terlebih dahulu maka tidak akan dapat emngakses beberapa endpoint berikut :
+    '/logout'               -> untuk logout user.
+    '/update'               -> untuk mengubah data pada user.
+    '/edit'                 -> untuk berpindah kehalamaan edit user.
+    '/deletePhoto'          -> untuk menghapus foto profil user.
+    '/product'              -> untuk menampilkan halaman produk pada database.
+    '/product/add'          -> untuk menambahkan produk baru.
+    '/product/edit/{id}'    -> untuk mengubah data pada produk.
+    '/product/delete/{id}'  -> Untuk menghapus produk.
+    '/category'             -> untuk menampilkan halaman kategori pada database.
+    '/category/add'         -> untuk menambahkan kategori baru.
+    '/category/edit/{id}'   -> untuk memperbarui data pada kategori.
+    '/category/delete/{id}' -> untuk menghapus kategori.
+2. Jika user tidak melakukan login maka user hanya dapat mengakses beberapa endpoint berikut :
+    '/'                     -> untuk menampilkan homepage
+    'ourContact'            -> untuk menampilkan halaman 'kontak kami'
+    'register'              -> untuk menampilkan halaman register.
+    'login'                 -> untuk berpindah ke halaman login.
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
